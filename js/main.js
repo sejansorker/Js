@@ -57,6 +57,7 @@
 
 
 // rest oparator
+let sss = document.querySelector(".sss")
 
 let sum = 0
 function abc(...a){
@@ -64,24 +65,24 @@ function abc(...a){
         sum += item
     })
     console.log(sum);
+    sss.innerHTML = sum
 }
 abc(10,20,30,40,50,60,70,80,90,100,200,300,400,500,600,700,800,900,1000)
 
 
 
 // spret Oparetop
-
+let hhh = document.querySelector(".hhh")
 const data = {
     id: 1,
     nam:"sejan",
     age:22,
     salary:30000,
-   
 }
 const extra ={
     father:"nazmul",
     mother:"sultana",
      ...data
 }
-
+hhh.innerHTML = JSON.stringify(extra);
 console.log(extra);
